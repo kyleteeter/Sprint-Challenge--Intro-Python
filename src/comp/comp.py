@@ -1,8 +1,5 @@
 # The following list comprehension exercises will make use of the 
 # defined Human class. 
-import math
-import re
-import copy
 
 class Human:
     def __init__(self, name, age):
@@ -71,5 +68,5 @@ print(g)
 # Write a list comprehension that contains the square root of all the ages.
 print("Square root of ages:")
 import math
-h = []
+h = [math.sqrt(x.age) for x in humans]
 print(h)
