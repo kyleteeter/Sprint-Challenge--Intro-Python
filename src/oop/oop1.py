@@ -17,3 +17,20 @@
 #     pass
 #
 # Put a comment noting which class is the base class
+
+class Vehicle:
+    def __init__(self,name):
+        self.name = name
+
+class GroundVehicle(Vehicle):
+    def __init__(self,name):
+        super().__init__(name)
+
+class Car(GroundVehicle):
+    def __init__(self,name):
+        super().__init__(name)
+
+
+class Car(GroundVehicle):
+    def __init__(self,name):
+        super().__init__(name)
